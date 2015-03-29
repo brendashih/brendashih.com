@@ -1,5 +1,6 @@
 $(document).ready(function() {
     parallaxScroll();
+    smoothScroll();
     contactFormCallback();
 });
 
@@ -17,13 +18,28 @@ function parallaxScroll() {
     });
 }
 
+function smoothScroll() {
+    $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        }
+    });
+}
+
 function contactFormCallback() {
     $("#contact").submit(function(event) {
         event.preventDefault();
         var $form = $(this),
-            name = $form.find('input[name="name"]').val(),
-            email = $form.find('input[name="_replyto"]').val(),
-            message = $("#formMessage").val();
+        name = $form.find('input[name="name"]').val(),
+        email = $form.find('input[name="_replyto"]').val(),
+        message = $("#formMessage").val();
         $.ajax({
             url: "//formspree.io/xbrendashih@gmail.com",
             method: "POST",
