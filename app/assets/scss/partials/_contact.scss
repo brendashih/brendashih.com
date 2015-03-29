@@ -1,0 +1,43 @@
+.contact {
+    h3 {
+        font-size: 28px;
+        letter-spacing: 5px;
+        font-weight: normal;
+    }
+
+    p {
+        font-size: 12px;
+        font-family: Garamond;
+        letter-spacing: 1.5px;
+        margin-bottom: 30px;
+    }
+
+    form {
+
+        input, textarea {
+            border: 1px solid #cccccc;
+            border-radius: 3px;
+        }
+
+        input {
+            display: block;
+            margin: 0 auto;
+            margin: 10px auto;
+            font-size: 14px;
+            width: 60%;
+
+            &[type=submit] {
+                width: 100px;
+                background: white;
+            }
+        }
+
+        textarea {
+            display: block;
+            margin: 0 auto;
+            width: 60%;
+            height: 6em;
+            font-size: 14px;
+        }
+    }
+}

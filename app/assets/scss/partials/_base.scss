@@ -14,7 +14,7 @@ body {
 .main {
     width: 100%;
 
-    .about {
+    .about, .contact {
         width: 100%;
         margin: 0 auto;
         text-align: center;
@@ -28,7 +28,7 @@ body {
         width: 800px;
         margin: 0 auto;
 
-        .about {
+        .about, .contact {
             width: 550px;
             margin: 0 auto;
         }
