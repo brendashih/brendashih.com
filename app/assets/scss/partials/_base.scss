@@ -10,3 +10,27 @@ body {
         color: black;
     }
 }
+
+.main {
+    width: 100%;
+
+    .about {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 13px;
+        line-height: 20px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .main {
+        width: 800px;
+        margin: 0 auto;
+
+        .about {
+            width: 550px;
+            margin: 0 auto;
+        }
+    }
+}
