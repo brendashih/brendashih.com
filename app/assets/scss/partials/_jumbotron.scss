@@ -1,10 +1,19 @@
 .jumbotron {
-    background: url(/assets/images/jumbotron.jpg);
     width: 100%;
     height: 750px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+
+    .jumbotron-background {
+        background: url(/assets/images/jumbotron.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+    }
 
     .title {
         clear: right;
@@ -32,12 +41,17 @@
 }
 
 .jumbotron-small {
-    background: url(/assets/images/jumbotron-small.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     width: 100%;
     height: 200px;
+
+    .jumbotron-background {
+        background: url(/assets/images/jumbotron-small.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+    }
 
     .title {
         position: absolute;
