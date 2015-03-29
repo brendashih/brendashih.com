@@ -17,13 +17,15 @@
         input, textarea {
             border: 1px solid #cccccc;
             border-radius: 3px;
+            font-family: 'Raleway', sans-serif;
+            font-size: 13px;
+            letter-spacing: 1.5px;
         }
 
         input {
             display: block;
             margin: 0 auto;
             margin: 10px auto;
-            font-size: 14px;
             width: 60%;
 
             &[type=submit] {
@@ -37,7 +39,6 @@
             margin: 0 auto;
             width: 60%;
             height: 6em;
-            font-size: 14px;
         }
     }
 }
