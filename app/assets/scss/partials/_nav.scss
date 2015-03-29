@@ -12,6 +12,29 @@
     }
 }
 
+@media screen and (max-width: 500px) {
+    .jumbotron {
+        .nav {
+            float: none;
+
+            ul {
+                text-align: center;
+                padding: 0;
+                margin-top: 0;
+
+                li {
+                    font-size: 12px;
+                    padding: 0 10px;
+                }
+            }
+        }
+
+        .title {
+            padding: 0;
+        }
+    }
+}
+
 @media screen and (max-width: 640px) {
     .jumbotron {
         .nav {
@@ -22,6 +45,10 @@
                 padding: 10px 0 0 0;
                 margin-top: 0;
             }
+        }
+
+        .title {
+            padding: 0;
         }
     }
 }
