@@ -6,30 +6,16 @@
 npm start
 ```
 
-## checkout canary branch
+Development is done on the `master` branch.
 
-```
-git checkout canary
-```
+# deployment workflow
 
-## commit changes
+## qa
 
-```
-# edit files
-git add <files>
-git commit -m 'Commit message'
-```
+- merge `master` into `qa`
+- push `qa` to github to trigger [netlify deploy](https://app.netlify.com/sites/brendashih-com-qa/overview) to https://qa.brendashih.com
 
-## push to github to trigger canary deploy
+## production
 
-```
-git push
-```
-
-## merge to master and push to github to trigger production deploy
-
-```
-git checkout master
-git merge canary
-git push
-```
+- merge `qa` into `production`
+- push `production` to github to trigger [netlify deploy](https://app.netlify.com/sites/brendashih-com-production/overview) to https://brendashih.com
