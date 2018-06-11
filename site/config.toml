@@ -39,7 +39,7 @@ canonifyurls            = true                              # Turns relative url
 
     # Share buttons
     shareTwitter        = true
-    shareFacebook       = true
+    shareFacebook       = false
     sharePinterest      = false
     shareGooglePlus     = true
 
@@ -47,13 +47,9 @@ canonifyurls            = true                              # Turns relative url
 # Find icon names here: http://fontawesome.io/cheatsheet/
 
 [[params.social]]
-    url = "https://twitter.com/"
+    url = "https://twitter.com/BrendaShih5"
     icon = "twitter"
 
 [[params.social]]
-    url = "https://facebook.com/"
-    icon = "facebook"
-
-[[params.social]]
-    url = "https://linkedin.com/"
+    url = "https://www.linkedin.com/in/brendashih/"
     icon = "linkedin"

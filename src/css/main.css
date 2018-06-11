@@ -22,10 +22,30 @@ h2 {
 }
 
 .social-icons a {
-  color: black;
+  color: #0097A7;
+}
+
+.social-icons a:hover {
+  color: #006064;
 }
 
 .nav-item {
   text-transform: lowercase;
   font-size: 16px;
+}
+
+.column a {
+  color: #0097A7;
+}
+
+.fa-arrow-up {
+  color: #0097A7;
+}
+
+.subtitle a {
+  color: #0097A7;
+}
+
+.subtitle a:hover {
+  color: #006064;
 }
