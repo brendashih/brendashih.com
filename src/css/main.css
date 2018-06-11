@@ -7,8 +7,16 @@
 /*
   Or add your statements here:
  */
-body{
-  font-family: sans-serif;
+body {
+  font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   text-align: center;
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
 }
