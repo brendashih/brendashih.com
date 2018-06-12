@@ -10,7 +10,7 @@
         <div class="container has-text-centered">
             <!-- Title and tagline -->
             <h1 class="bold-title {{ if .Site.Params.fadeIn | default true }}fade-in one{{ end }}">
-                Hi, I'm {{ .Site.Params.firstName | default "Introduction" }}.
+                Hi there, I'm {{ .Site.Params.firstName | default "Introduction" }}.
             </h1>
             <h3 class="subtitle is-3 {{ if .Site.Params.fadeIn | default true }}fade-in two{{ end }}">
                 {{ .Site.Params.tagLine }}
@@ -48,9 +48,9 @@
     <div class="container">
     <h2 class="title is-2 has-text-centered">about</h2>
 
-        <div class="columns"><!-- Avatar and about.md side by side except mobile -->
+        <div><!-- Avatar and about.md side by side except mobile -->
             {{ if .Site.Params.avatar }}
-            <div class="column is-one-third has-text-centered">
+            <div class="is-one-third has-text-centered">
               <img class="img-responsive avatar" src="{{ .Site.Params.avatar | relURL }}" alt="My profile picture.">
             </div>
             {{ end }}
