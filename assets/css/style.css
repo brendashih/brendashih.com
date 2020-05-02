@@ -1,0 +1,296 @@
+* {
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #212121;
+}
+
+a:link {
+    text-decoration: none;
+    color: #505A5B; 
+}
+
+a:hover {
+    color: #212121;
+}
+
+a:visited {
+    color: #505A5B; 
+}
+
+/*.name {
+    font-size: 15px;
+    padding: 15px;
+}
+
+.name a:link {
+    font-weight: bold;
+}*/
+
+.logo {
+    font-size: 30px;
+    padding: 15px;
+}
+
+.logo a:link {
+    font-weight: bold;
+}
+
+.nav ul {
+    font-size: 15px;
+    list-style-type: none;
+}
+
+.nav li {
+    padding: 25px;
+    display:inline-block;
+}
+
+.intro {
+    margin-top: 20%;
+    padding: 15px;
+}
+
+.intro h1 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.intro p {
+    font-size: 22px;
+    margin-top: 12px;
+}
+
+/*.intro button {
+    margin-top: 24px;
+    border: 1px solid #505A5B; 
+    border-radius: 4px;
+    background-color: #fff; 
+    padding: 10px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.intro button:hover {
+    color: #fff;
+    border: 1px solid #8F91A2;
+}*/
+
+.email-section {
+    margin-top: 8%;
+}
+
+.email {
+    position: relative;
+    margin: auto;
+    padding: 19px 22px;
+    transition: all .2s ease;
+}
+
+.email:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 28px;
+    background: #DCEDFF;
+    width: 58px;
+    height: 58px;
+}
+
+span {
+    position: relative;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    vertical-align: middle;
+}
+
+svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #212121;
+    stroke-width: 2;
+    transform: translateX(-5px);
+}
+
+.design-project {
+    text-align: center;
+    border: 1px solid;
+    border-radius: 4px;
+    margin: 15px;
+    height: 335px;
+}
+
+.design-project img {
+    width: 80%;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.overlay {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+  
+.design-project:hover .project-image {
+    opacity: 0.2;
+}
+
+.design-project:hover .overlay {
+opacity: 1;
+}
+
+.project-text {
+color:#212121;
+font-size: 20px;
+text-align: center;
+}
+
+.about {
+    margin: auto;
+    padding: 15px;
+    position: relative;
+    vertical-align: middle;
+}
+
+.about h4 {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.about p {
+    font-size: 14px;
+    margin-top: 24px;
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile img {
+    width: 80%;
+}
+
+.subtitle p {
+    font-size: 14px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.social a {
+    padding-right: 5px;
+}
+
+.footer {
+    margin-top: 20%;
+    margin-bottom: 10%;
+}
+
+.footer p {
+    font-size: 12px;
+    text-align: center;
+}
+
+.project-title h1 {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.project-title h4 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.project-title p {
+    margin-top: 36px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.full-image img {
+    width: 100%;
+}
+
+.project-subheading p {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 36px;
+}
+
+.project-text p {
+    margin-top: 36px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.team li {
+    list-style-type: none;
+}
+
+.responsibilities li {
+    list-style-type: none;
+}
+
+.really-full-image img {
+    width: 100%;
+}
+
+.back {
+    text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .design-project img {
+        -webkit-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+
+  }
+
+  @media only screen and (max-width: 600px) {
+    .intro {
+        text-align:center;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .nav {
+        text-align: center;
+        margin-left: -15px;
+    }
+
+    .nav li {
+        display: inline-block;
+    }
+
+    .about {
+        text-align:center;
+    }
+
+    .profile img {
+        width: 80%;
+    }
+
+  }

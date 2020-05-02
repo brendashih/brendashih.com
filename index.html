@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"/>
+        <title>Brenda Shih Design Portfolio</title>
+
+        <script>
+            $(document).ready(function(){
+              // Add smooth scrolling to all links
+              $("a").on('click', function(event) {
+            
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                  // Prevent default anchor click behavior
+                  event.preventDefault();
+            
+                  // Store hash
+                  var hash = this.hash;
+            
+                  // Using jQuery's animate() method to add smooth page scroll
+                  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                  $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                  }, 800, function(){
+               
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                  });
+                } // End if
+              });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="container" id="header">
+            <div class="row">
+                <div class="col-xs-6 col-md-4">
+                    <!--<div class="name">
+                        <a href="/">BRENDA SHIH</a>
+                    </div>-->
+                    <div class="logo"><a href="index.html">B</a></div>
+                </div>
+                <div class="col-xs-6 col-md-4"></div>
+                <div class="col-xs-6 col-md-4">
+                    <div class="nav">
+                        <ul>
+                            <li><a href="#work-section">work</a></li>
+                            <li><a href="#about-section">about</a></li>
+                            <li><a href="assets/images/brenda-shih-resume.pdf">resume</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="intro-section">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="intro">
+                        <h1>Oh hey there! I'm Brenda</h1>
+                        <p>I'm a product designer at <a href="http://www.flatiron.com">Flatiron Health</a> in New York City.</p>
+                        <!--<button><a href="mailto:xbrendashih@gmail.com">Say hello</a></button>-->
+                        <div class="email-section">
+                            <a href="mailto:xbrendashih@gmail.com" class="email">
+                                <span>Say hello</span>
+                                <svg width="13px" height="10px" viewBox="0 0 13 10">
+                                <path d="M1,5 L11,5"></path>
+                                <polyline points="8 1 12 5 8 9"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="margin-top:15%;" id="work-section">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="design-project" style="background-color:#D7CDCC; border: 1px solid #D7CDCC;">
+                        <a href="bank-setup.html">
+                        <img src="assets/images/bank-setup/bank-setup-design.png" alt="bank-setup-design" class="project-image">
+                        <div class="overlay">
+                            <div class="project-text">Bank setup: Fidelity Investments</div>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="design-project" style="background-color:#B0C0BC; border: 1px solid #B0C0BC;">
+                        <a href="retirement.html">
+                        <img src="assets/images/retirement/retirement-design.png" alt="retirement-design" class="project-image">
+                        <div class="overlay">
+                            <div class="project-text">Retirement distributions: Fidelity Investments</div>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="design-project" style="background-color: #EBEBD3; border: 1px solid #EBEBD3;">
+                        <a href="portal.html">
+                            <img src="assets/images/portal/portal-design.png" alt="portal-design" class="project-image">
+                            <div class="overlay">
+                                <div class="project-text">Physician portal: Genospace</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="about-section" style="margin-top: 15%;">
+            <div class="row">
+
+                <div class="col-xs-12 col-md-8">
+                    <div class="about">
+                        <h4>I'm a product designer by day,</h4>
+                        <h4>wannabe horror film critic by night.</h4>
+                        <p>In 2014, I graduated from Parsons School for Design with a bachelors in fashion. After a year in Germany, I realized that the industry wasn't for me and pivoted to product design.</p>
+                        <p>Previously, I was at Fidelity Investments in Boston, helping our banking teams shape a better experience for our customers. I'm currently at Flatiron Health, improving the digital products our oncologists use everyday so that their focus can be on caring for their patients.</p>
+                        <p>I like: traveling &#128745 coffee &#9749 tv &#128250</p>
+                        <p><strong>Next stop: <del>Spain</del></strong></p>
+                        <div class="social">
+                            <a href="https://www.linkedin.com/in/brendashih/" class="fa fa-linkedin"></a>
+                            <a href="https://www.instagram.com/blender.shih/?hl=en" class="fa fa-instagram"></a>
+                            <a href="https://twitter.com/blendershih" class="fa fa-twitter"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-md-4">
+                    <div class="profile">
+                        <img src="assets/images/profile.jpg" alt="profile-picture" class="img-fluid">
+                    </div>
+                    <div class="subtitle">
+                        <p>Sippin' on some beers in Prague</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6 col-md-4"></div>
+                <div class="col-xs-6 col-md-4">
+                    <div class="footer">
+                        <p>© 2020 Brenda Shih</p>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-4">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
